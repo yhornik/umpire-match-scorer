@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "my-umpire-scorer": {
+    "my-gtm-ga": {
       "projectType": "application",
       "schematics": {
         "@schematics/angular:component": {
@@ -42,7 +42,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/my-umpire-scorer",
+            "outputPath": "dist/my-gtm-ga",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": "src/polyfills.ts",
@@ -94,10 +94,10 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {
-              "browserTarget": "my-umpire-scorer:build:production"
+              "browserTarget": "my-gtm-ga:build:production"
             },
             "development": {
-              "browserTarget": "my-umpire-scorer:build:development"
+              "browserTarget": "my-gtm-ga:build:development"
             }
           },
           "defaultConfiguration": "development"
@@ -105,7 +105,7 @@
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "my-umpire-scorer:build"
+            "browserTarget": "my-gtm-ga:build"
           }
         },
         "test": {
@@ -129,5 +129,5 @@
       }
     }
   },
-  "defaultProject": "my-umpire-scorer"
+  "defaultProject": "my-gtm-ga"
 }

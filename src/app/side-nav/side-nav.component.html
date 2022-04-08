@@ -9,7 +9,8 @@
       <a mat-list-item href="/page-b">Page B</a>
       <a mat-list-item href="/page-c">Page C</a>
     </mat-nav-list>
-    <button mat-button (click)="customEvent()">Event Button</button>
+    <button class="btn-event" mat-raised-button color="primary" (click)="customEvent('one')">Event Button 1</button>
+    <button class="btn-event" mat-raised-button color="primary" (click)="customEvent('two')">Event Button 2</button>
   </mat-sidenav>
   <mat-sidenav-content>
     <mat-toolbar color="primary">
@@ -21,7 +22,7 @@
         *ngIf="isHandset$ | async">
         <mat-icon aria-label="Side nav toggle icon">menu</mat-icon>
       </button>
-      <span>my-umpire-scorer</span>
+      <span>My GTM GA</span>
     </mat-toolbar>
     <!-- Add Content Here -->
     <router-outlet></router-outlet>
